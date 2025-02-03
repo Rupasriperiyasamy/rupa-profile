@@ -1,0 +1,375 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: red;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    background-color: orange;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+h3 {
+	color: white;
+    margin-bottom: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:rgb(10, 13, 13);
+}
+.header{
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100;
+    padding: 20px 10%;
+    background-color: transparent;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-size: large;
+}
+.logo{
+    font-size: 25px;
+    color: rgb(239, 237, 237);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    
+}
+.navbar a{
+    display: inline-block;
+    font-size: 10px;
+    color: rgb(230, 227, 227);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(241, 49, 10);
+    transition: 35px;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+    color: aliceblue;
+}
+.home-content h3 span{
+    color: rgb(36, 22, 228);
+}
+section{
+	color:white;
+}
+hr{
+	color:red;
+	width:100%;
+	background-color:red;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: 3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+    color: aliceblue;
+}
+.home-content p{
+    font-size: 16px;
+    opacity: 0;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 1s;
+    color: aliceblue;
+   
+}
+.home-img img{
+    max-width: 250px;
+    margin-right: -20px;
+    opacity: 0;
+    animation: zoomIn 2s ease forwards;
+    animation-delay: 2s;
+	
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px rgb(220, 221, 224);
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideleft 1s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+
+}
+.social-media a:hover{
+    background-color:rgb(220, 221, 224) ;
+    color: black;
+    box-shadow: 0 0 20px rgb(222, 215, 3);
+}
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color:rgb(19, 164, 204) ;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(11, 11, 178);
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+/* KEYFRAMES ANIMATION */
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideTop {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+} 
+@keyframes slideleft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+} 
+@keyframes zoomIn {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+} 
+/* General Section Styling */
+#contact {
+  background-color: black;
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+#contact h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Contact Details Styling */
+.contact-details p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: white;
+}
+
+.contact-details a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* Social Links Styling */
+.social-links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 15px;
+  color: white;
+  background-color: #007BFF;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  background-color: #0056b3;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 500px;
+  color:white;
+  align-items:center;
+}
+
+div.gallery:hover {
+  border: 2px solid #777;
+  color:red;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  align-items:center;
+  
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+section {
+	align-items:center;
+}
+audio{
+	background-color:red;
+	color:white;
+}
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#faq {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+details {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+details[open] {
+    border-color: #007BFF;
+}
+
+details p {
+    margin: 10px 0 0;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    color: #555;
+}
+
